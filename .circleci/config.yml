@@ -14,7 +14,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            conda create --name learning-ci --file requirements.txt
+            conda env create --name learning-ci --file requirements.txt
             conda activate learning-ci
       # step 3: run linter and test
       - run:
